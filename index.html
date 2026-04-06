@@ -18,7 +18,6 @@
             <div class="flower">🌸</div>
         </div>
 
-        <!-- 🌸 STICKERS -->
         <div class="stickers">🌸 ✨ 📚 📝 🎓 💖</div>
 
         <input type="text" id="name" placeholder="👤 Student Name">
@@ -26,23 +25,23 @@
         <div class="subjects">
             <div class="row">
                 <span>📝 Quiz (20%)</span>
-                <input type="number" id="g1" placeholder="Grade">
+                <input type="number" id="g1" min="0" max="100" placeholder="Grade">
             </div>
             <div class="row">
                 <span>🧪 Laboratory (30%)</span>
-                <input type="number" id="g2" placeholder="Grade">
+                <input type="number" id="g2" min="0" max="100" placeholder="Grade">
             </div>
             <div class="row">
                 <span>📘 Assignment (10%)</span>
-                <input type="number" id="g3" placeholder="Grade">
+                <input type="number" id="g3" min="0" max="100" placeholder="Grade">
             </div>
             <div class="row">
                 <span>📅 Attendance (10%)</span>
-                <input type="number" id="g4" placeholder="Grade">
+                <input type="number" id="g4" min="0" max="100" placeholder="Grade">
             </div>
             <div class="row">
                 <span>🏆 Major Exam (30%)</span>
-                <input type="number" id="g5" placeholder="Grade">
+                <input type="number" id="g5" min="0" max="100" placeholder="Grade">
             </div>
         </div>
 
@@ -51,8 +50,7 @@
         <h2 id="result">🎯 Final Grade: --</h2>
         <p class="motivation">💡 "Every grade is a step closer to success!"</p>
 
-        <!-- 📚 RECORDS -->
-        <div class="records" id="records">
+        <div class="records">
             <h3>📚 Student Records</h3>
             <p class="records-subtitle">🌟 Class Performance Tracker 🌟</p>
 
@@ -66,6 +64,7 @@
                         <th>Attend</th>
                         <th>Exam</th>
                         <th>Final</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody id="recordBody"></tbody>

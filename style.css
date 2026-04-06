@@ -13,7 +13,6 @@ body{
     padding:20px;
 }
 
-/* 🌸 Floating background */
 body::before{
     content:"🌸 ✨ 🌸 ✨ 🌸";
     position:fixed;
@@ -34,11 +33,6 @@ body::before{
     padding:25px;
     border-radius:25px;
     box-shadow:0 10px 30px rgba(255,105,180,0.25);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform: translateY(-3px);
 }
 
 .header{
@@ -50,11 +44,8 @@ body::before{
 
 .header h1{
     color:#ff4f81;
-    margin:0;
-    text-shadow:0 0 8px rgba(255,105,180,0.6);
 }
 
-/* 🌸 Stickers */
 .stickers{
     text-align:center;
     font-size:22px;
@@ -74,17 +65,8 @@ input{
     border-radius:12px;
     border:2px solid #ffd1dc;
     margin-bottom:10px;
-    transition:0.3s;
 }
 
-input:focus{
-    outline:none;
-    border-color:#ff4f81;
-    box-shadow:0 0 10px rgba(255,105,180,0.4);
-    transform:scale(1.02);
-}
-
-/* SUBJECTS */
 .subjects .row{
     display:flex;
     justify-content:space-between;
@@ -105,7 +87,6 @@ input:focus{
     width:90px;
 }
 
-/* BUTTON */
 button{
     width:100%;
     padding:12px;
@@ -115,15 +96,8 @@ button{
     color:white;
     font-weight:bold;
     cursor:pointer;
-    transition:0.3s;
 }
 
-button:hover{
-    transform:scale(1.05);
-    box-shadow:0 10px 25px rgba(255,105,180,0.5);
-}
-
-/* RESULT */
 #result{
     text-align:center;
     margin-top:15px;
@@ -133,14 +107,12 @@ button:hover{
     border-radius:15px;
 }
 
-/* Motivation */
 .motivation{
     text-align:center;
     font-size:13px;
     color:#ff69b4;
 }
 
-/* RECORDS */
 .records{
     margin-top:20px;
 }
@@ -156,8 +128,6 @@ table{
     border-collapse:collapse;
     margin-top:10px;
     background:white;
-    border-radius:10px;
-    overflow:hidden;
 }
 
 th, td{
@@ -171,7 +141,51 @@ th{
     color:#ff4f81;
 }
 
-tbody tr:hover{
-    background:#ffe4ec;
-    transform:scale(1.01);
+td button{
+    margin:2px;
+    padding:5px 8px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:12px;
+}
+
+td button:first-child{
+    background:#87cefa;
+    color:white;
+}
+
+td button:last-child{
+    background:#ff6b6b;
+    color:white;
+}
+
+/* 📱 MOBILE */
+@media(max-width:600px){
+
+    .card{
+        padding:15px;
+    }
+
+    .subjects .row{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:5px;
+    }
+
+    .subjects input{
+        width:100%;
+    }
+
+    table{
+        font-size:12px;
+    }
+
+    th, td{
+        padding:5px;
+    }
+
+    button{
+        font-size:14px;
+    }
 }
