@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grade Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        
+        <div class="header">
+            <div class="flower">🌸</div>
+            <h1>Grade Calculator</h1>
+            <div class="flower">🌸</div>
+        </div>
+
+        <!-- 🌸 STICKERS -->
+        <div class="stickers">🌸 ✨ 📚 📝 🎓 💖</div>
+
+        <input type="text" id="name" placeholder="👤 Student Name">
+
+        <div class="subjects">
+            <div class="row">
+                <span>📝 Quiz (20%)</span>
+                <input type="number" id="g1" placeholder="Grade">
+            </div>
+            <div class="row">
+                <span>🧪 Laboratory (30%)</span>
+                <input type="number" id="g2" placeholder="Grade">
+            </div>
+            <div class="row">
+                <span>📘 Assignment (10%)</span>
+                <input type="number" id="g3" placeholder="Grade">
+            </div>
+            <div class="row">
+                <span>📅 Attendance (10%)</span>
+                <input type="number" id="g4" placeholder="Grade">
+            </div>
+            <div class="row">
+                <span>🏆 Major Exam (30%)</span>
+                <input type="number" id="g5" placeholder="Grade">
+            </div>
+        </div>
+
+        <button onclick="calculate()">✨ Compute & Save 🎀</button>
+
+        <h2 id="result">🎯 Final Grade: --</h2>
+        <p class="motivation">💡 "Every grade is a step closer to success!"</p>
+
+        <!-- 📚 RECORDS -->
+        <div class="records" id="records">
+            <h3>📚 Student Records</h3>
+            <p class="records-subtitle">🌟 Class Performance Tracker 🌟</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Quiz</th>
+                        <th>Lab</th>
+                        <th>Assign</th>
+                        <th>Attend</th>
+                        <th>Exam</th>
+                        <th>Final</th>
+                    </tr>
+                </thead>
+                <tbody id="recordBody"></tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
